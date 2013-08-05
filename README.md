@@ -5,8 +5,10 @@ Delicieux provides a self hosted bookmarking API compatible with Delicious - and
 
 At the moment Delicieux is tightly coupled to the Google App Engine platform. This should change in the future.
 
-GETTING STARTED
-===============
+To preserve compatibility with the delicious API, Delicieux does not implement best practices: HTTP 200 for errors...
+
+###GETTING STARTED
+
 
 1. Register an application on Google App Engine [https://appengine.google.com/](https://appengine.google.com/)
 2. Clone this repo
@@ -15,13 +17,12 @@ GETTING STARTED
 5. Deploy to Google App Engine
 
 
-UPDATE
-======
+####UPDATE
+
 
 	https://api.delicious.com/v1/posts/update - Check to see when a user last posted an item
 
-POSTS
-=====
+####POSTS
 
 	https://api.delicious.com/v1/posts/add? - add a new bookmark
 	https://api.delicious.com/v1/posts/delete? - delete an existing bookmark
@@ -33,16 +34,14 @@ POSTS
 	https://api.delicious.com/v1/posts/suggest - fetch popular, recommended and network tags for a specific url
 
 
-TAGS
-====
+####TAGS
 
 	https://api.delicious.com/v1/tags/get - fetch all tags
 	https://api.delicious.com/v1/tags/delete? - delete a tag from all posts
 	https://api.delicious.com/v1/tags/rename? - rename a tag on all posts
 
 
-TAG BUNDLES (NOT IMPLEMENTED)
-===========
+####TAG BUNDLES (NOT IMPLEMENTED)
 
 	https://api.delicious.com/v1/tags/bundles/all? - fetch tag bundles
 	https://api.delicious.com/v1/tags/bundles/set? - assign a set of tags to a bundle
