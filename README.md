@@ -10,6 +10,8 @@ To preserve compatibility with the delicious API, Delicieux does not implement b
 For more about the delicious.com API, visit [https://delicious.com/developers](https://delicious.com/developers)
 For more about the pinboard.in API, visit [http://pinboard.in/api/](http://pinboard.in/api/)
 
+**Delicieux is not multi-tenant at the moment**
+
 ###GETTING STARTED
 
 
