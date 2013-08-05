@@ -7,6 +7,9 @@ At the moment Delicieux is tightly coupled to the Google App Engine platform. Th
 
 To preserve compatibility with the delicious API, Delicieux does not implement best practices: HTTP 200 for errors...
 
+For more about the delicious.com API, visit [https://delicious.com/developers](https://delicious.com/developers)
+For more about the pinboard.in API, visit [http://pinboard.in/api/](http://pinboard.in/api/)
+
 ###GETTING STARTED
 
 
@@ -17,12 +20,10 @@ To preserve compatibility with the delicious API, Delicieux does not implement b
 5. Deploy to Google App Engine
 
 
-####UPDATE
+####Supported endpoints
 
 
 	https://api.delicious.com/v1/posts/update - Check to see when a user last posted an item
-
-####POSTS
 
 	https://api.delicious.com/v1/posts/add? - add a new bookmark
 	https://api.delicious.com/v1/posts/delete? - delete an existing bookmark
@@ -33,15 +34,12 @@ To preserve compatibility with the delicious API, Delicieux does not implement b
 	https://api.delicious.com/v1/posts/all?hashes - fetch a change detection manifest of all items
 	https://api.delicious.com/v1/posts/suggest - fetch popular, recommended and network tags for a specific url
 
-
-####TAGS
-
 	https://api.delicious.com/v1/tags/get - fetch all tags
 	https://api.delicious.com/v1/tags/delete? - delete a tag from all posts
 	https://api.delicious.com/v1/tags/rename? - rename a tag on all posts
 
 
-####TAG BUNDLES (NOT IMPLEMENTED)
+####Not Supported endpoints
 
 	https://api.delicious.com/v1/tags/bundles/all? - fetch tag bundles
 	https://api.delicious.com/v1/tags/bundles/set? - assign a set of tags to a bundle
